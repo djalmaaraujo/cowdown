@@ -1,0 +1,21 @@
+{
+  "main": "./app/index.html",
+  "name": "Cowdown",
+  "description": "Another Markdown parser",
+  "version": "0.1.0",
+  "keywords": [ "cowdown", "markdown", "node-webkit" ],
+  "window": {
+    "title": "Cowdown",
+    "icon": "link.png",
+    "toolbar": false,
+    "frame": true,
+    "width": 800,
+    "height": 500,
+    "position": "mouse",
+    "min_width": 400,
+    "min_height": 200
+  },
+  "webkit": {
+    "plugin": true
+  }
+}

@@ -1,0 +1,52 @@
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  background: #fff;
+}
+
+#preview,
+#code {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+#code textarea {
+  background: #282828;
+  color: white;
+  width: 100%;
+  border: 0;
+  height: 100%;
+  outline: none;
+  padding: 20px;
+}
+
+#preview {
+  background: white;
+  padding: 20px;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}

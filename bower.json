@@ -1,0 +1,15 @@
+{
+  "name": "cowdown",
+  "version": "0.0.1",
+  "authors": [
+    "djalmaaraujo <djalma.araujo@gmail.com>"
+  ],
+  "description": "A markdown APP",
+  "main": "app/index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "~3.0.1",
+    "showdown": "~0.3.1"
+  }
+}
