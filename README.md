@@ -3,6 +3,8 @@
 #### Mooooooooooo.
 A simple app using node-webkit.
 
+![image](https://raw.githubusercontent.com/djalmaaraujo/cowdown/master/preview.png)
+
 ## To use
 * bower install
 * /path/to/nw .
