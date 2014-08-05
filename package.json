@@ -3,11 +3,15 @@
   "name": "Cowdown",
   "description": "Another Markdown parser",
   "version": "0.1.0",
-  "keywords": [ "cowdown", "markdown", "node-webkit" ],
+  "keywords": [
+    "cowdown",
+    "markdown",
+    "node-webkit"
+  ],
   "window": {
     "title": "Cowdown",
     "icon": "link.png",
-    "toolbar": false,
+    "toolbar": true,
     "frame": true,
     "width": 800,
     "height": 500,

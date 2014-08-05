@@ -2,8 +2,8 @@
   COWDOWN_TITLE = 'Cowdown';
 
   Cowdow = function (converter) {
-    this.code = $('#code textarea');
-    this.preview = $('#preview');
+    this.code = $('.cowdown-code textarea');
+    this.preview = $('.cowdown-preview');
     this.converter = new converter();
     this.listener();
   };

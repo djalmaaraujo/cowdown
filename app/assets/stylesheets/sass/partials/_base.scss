@@ -1,12 +1,8 @@
 /* apply a natural box layout model to all elements */
-/* line 2, sass/partials/_base.scss */
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  @include box-sizing(border-box);
 }
 
-/* line 7, sass/partials/_base.scss */
 html,
 body {
   min-height: 100%;
@@ -14,14 +10,11 @@ body {
   background: #fff;
 }
 
-/* line 13, sass/partials/_base.scss */
 .cowdown-app {
-  overflow: hidden;
-  *zoom: 1;
+  @include clearfix;
   height: 100%;
 }
 
-/* line 19, sass/partials/_base.scss */
 .cowdown-preview,
 .cowdown-code {
   width: 50%;
@@ -29,7 +22,6 @@ body {
   float: left;
 }
 
-/* line 25, sass/partials/_base.scss */
 .cowdown-code textarea {
   background: #282828;
   color: white;
@@ -40,7 +32,6 @@ body {
   padding: 20px;
 }
 
-/* line 35, sass/partials/_base.scss */
 .cowdown-preview {
   background: white;
   padding: 20px;
@@ -48,7 +39,6 @@ body {
   word-wrap: break-word;
 }
 
-/* line 42, sass/partials/_base.scss */
 img {
   width: 100%;
 }

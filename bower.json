@@ -1,6 +1,7 @@
 {
   "name": "cowdown",
   "version": "0.0.1",
+  "componentsDirectory": "app/assets/bower_components/",
   "authors": [
     "djalmaaraujo <djalma.araujo@gmail.com>"
   ],

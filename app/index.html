@@ -2,18 +2,20 @@
 <html>
   <head>
     <title>Cowdown</title>
-    <link rel="stylesheet" type="text/css" href="../bower_components/normalize.css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css">
+    <link href="assets/bower_components/normalize.css/normalize.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="assets/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <section id="code">
-      <textarea></textarea>
+    <section class="cowdown-app clearfix">
+      <section class="cowdown-code">
+        <textarea></textarea>
+      </section>
+      <section class="cowdown-preview"></section>
     </section>
-    <section id="preview"></section>
-    <div class="clearfix"></div>
+    <input id="gui-save" type="file" nwsaveas="filename.md" />
 
-    <script src="../bower_components/showdown/compressed/showdown.js"></script>
-    <script src="../bower_components/zepto/zepto.min.js"></script>
+    <script src="assets/bower_components/showdown/compressed/showdown.js"></script>
+    <script src="assets/bower_components/zepto/zepto.min.js"></script>
     <script src="assets/javascripts/cowdown.js"></script>
     <script src="assets/javascripts/menubar.js"></script>
     <script src="assets/javascripts/application.js"></script>
