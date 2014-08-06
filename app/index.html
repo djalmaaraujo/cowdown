@@ -12,9 +12,13 @@
       </section>
       <section class="cowdown-preview"></section>
     </section>
-    <input id="gui-save" type="file" nwsaveas="filename.md" />
+    <input id="gui-save" type="file" nwsaveas="filename.md" style="display: none;" />
 
-    <script src="assets/bower_components/showdown/compressed/showdown.js"></script>
+    <script src="assets/bower_components/showdown/src/showdown.js"></script>
+    <script defer src="assets/bower_components/showdown/src/extensions/prettify.js"></script>
+    <script defer src="assets/bower_components/showdown/src/extensions/github.js"></script>
+    <script defer src="assets/bower_components/showdown/src/extensions/table.js"></script>
+    <script defer src="assets/bower_components/showdown/src/extensions/twitter.js"></script>
     <script src="assets/bower_components/zepto/zepto.min.js"></script>
     <script src="assets/javascripts/cowdown.js"></script>
     <script src="assets/javascripts/file_utils.js"></script>

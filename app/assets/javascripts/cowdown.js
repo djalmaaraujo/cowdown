@@ -4,21 +4,19 @@
   Cowdow = function (converter) {
     this.code = $('.cowdown-code textarea');
     this.preview = $('.cowdown-preview');
-    this.converter = new converter();
+    this.converter = new converter({ extensions: ['github', 'prettify', 'table', 'twitter'] });
     this.listener();
   };
 
   Cowdow.prototype.listener = function () {
     var self = this;
     self.code.on('keyup', function () {
-      self.makePreview();
-      self.makeStats();
+      self.updatePreview();
     });
 
     self.code.on('paste', function () {
       setTimeout(function () {
-        self.makePreview();
-        self.makeStats();
+        self.updatePreview();
       }, 100);
     });
   };
@@ -35,5 +33,10 @@
   Cowdow.prototype.makePreview = function() {
     this.html = this.converter.makeHtml(this.getCode());
     this.preview.html(this.html);
+  };
+
+  Cowdow.prototype.updatePreview = function() {
+    this.makePreview();
+    this.makeStats();
   };
 })();

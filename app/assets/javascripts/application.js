@@ -1,1 +1,3 @@
-window.CowdowApp = new Cowdow(Showdown.converter);
+$(function () {
+  window.CowdowApp = new Cowdow(Showdown.converter);
+});
