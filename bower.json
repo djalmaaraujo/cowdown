@@ -12,6 +12,7 @@
   "dependencies": {
     "normalize.css": "~3.0.1",
     "showdown": "~0.3.1",
-    "zepto": "~1.1.4"
+    "zepto": "~1.1.4",
+    "google-code-prettify": "~1.0.2"
   }
 }

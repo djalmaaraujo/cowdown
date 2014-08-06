@@ -35,7 +35,7 @@ Welcome to Cowdown. Just another Markdown application.
 
 ## Google prettify
 
-<pre>
+<code>
 var fs = require('fs');
 console.log('loader');
 
@@ -47,4 +47,4 @@ $(function () {
   CowdowApp.updatePreview();
 });
 
-</pre>
+</code>
