@@ -1,5 +1,4 @@
 var fs = require('fs');
-console.log('loader');
 
 $(function () {
   var data = fs.readFileSync('./app/assets/help.md');
