@@ -27,9 +27,10 @@ body {
   width: 50%;
   height: 100%;
   float: left;
+  overflow-y: scroll;
 }
 
-/* line 25, sass/partials/_base.scss */
+/* line 26, sass/partials/_base.scss */
 .cowdown-code textarea {
   background: #282828;
   color: white;
@@ -40,7 +41,7 @@ body {
   padding: 20px;
 }
 
-/* line 35, sass/partials/_base.scss */
+/* line 36, sass/partials/_base.scss */
 .cowdown-preview {
   background: white;
   padding: 20px;
@@ -48,7 +49,7 @@ body {
   word-wrap: break-word;
 }
 
-/* line 42, sass/partials/_base.scss */
+/* line 43, sass/partials/_base.scss */
 img {
   width: 100%;
 }
