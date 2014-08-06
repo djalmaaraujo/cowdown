@@ -25,5 +25,7 @@ A simple app using node-webkit.
 * /path/to/nw .
 
 ## License
-
 [MIT License](http://djalmaaraujo.mit-license.org)
+
+---------------------------
+[cc company](http://nossomos.cc) - Code Consultants and Open Source Coding
