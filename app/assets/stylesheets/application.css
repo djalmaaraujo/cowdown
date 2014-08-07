@@ -27,10 +27,9 @@ body {
   width: 50%;
   height: 100%;
   float: left;
-  overflow-y: scroll;
 }
 
-/* line 26, sass/partials/_base.scss */
+/* line 25, sass/partials/_base.scss */
 .cowdown-code textarea {
   background: #282828;
   color: white;
@@ -39,6 +38,7 @@ body {
   height: 100%;
   outline: none;
   padding: 20px;
+  overflow-y: scroll;
 }
 
 /* line 36, sass/partials/_base.scss */

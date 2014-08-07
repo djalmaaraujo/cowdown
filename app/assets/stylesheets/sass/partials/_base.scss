@@ -20,7 +20,6 @@ body {
   width: 50%;
   height: 100%;
   float: left;
-  overflow-y: scroll;
 }
 
 .cowdown-code textarea {
@@ -31,6 +30,7 @@ body {
   height: 100%;
   outline: none;
   padding: 20px;
+  overflow-y: scroll;
 }
 
 .cowdown-preview {
