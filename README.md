@@ -22,6 +22,7 @@ A simple app using node-webkit.
 * Keyboard shortcuts
 * Close this file menu item
 * Export HTML
+* Export to PDF
 * Themes
 
 ## To use
