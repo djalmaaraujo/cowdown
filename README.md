@@ -14,7 +14,8 @@ A simple app using node-webkit.
 * Twitter #hashtag and @username links
 * Table style support
 * Google prettify for code highlight
-* Youtube Extension added. To use ```[youtube](http://youtubelink)```
+* Youtube Extension added. To use ```[youtube](https://youtubelink)```
+* Vimeo Extension added. To use ```[vimeo](https://vimeolinknk)```
 
 ## Goals
 * Better code highlight
