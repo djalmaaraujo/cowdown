@@ -1,9 +1,3 @@
-//
-//  Google youtube
-//  A showdown extension to add Google youtube (http://code.google.com/p/google-code-youtube/)
-//  hints to showdown's HTML output.
-//
-
 (function(){
 
     var youtube = function(converter) {
