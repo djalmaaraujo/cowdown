@@ -4,7 +4,7 @@
   Cowdow = function (converter) {
     this.code = $('.cowdown-code textarea');
     this.preview = $('.cowdown-preview');
-    this.converter = new converter({ extensions: ['prettify', 'table', 'twitter', 'youtube'] });
+    this.converter = new converter({ extensions: ['prettify', 'table', 'twitter', 'youtube', 'vimeo'] });
     this.listener();
   };
 

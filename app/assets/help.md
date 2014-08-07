@@ -51,3 +51,6 @@ $(function () {
 
 ## Youtube Extension
 [youtube](https://www.youtube.com/watch?v=DlJEt2KU33I)
+
+## Vimeo Extension
+[vimeo](http://vimeo.com/100693599)
