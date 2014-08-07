@@ -25,9 +25,12 @@ A simple app using node-webkit.
 * Export to PDF
 * Themes
 
-## To use
+## How to contribute (Will add grunt/gulp later)
+* gem install compass
 * bower install
 * /path/to/nw .
+* Make CSS chances on the SASS directory
+* Run ```compass watch```
 
 ## License
 [MIT License](http://djalmaaraujo.mit-license.org)
