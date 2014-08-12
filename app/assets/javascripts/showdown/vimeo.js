@@ -3,7 +3,6 @@
     return [
       { type: 'lang', filter: function(source) {
           return source.replace(/\[vimeo\]\(.*vimeo.com\/(.*)\)/gi, function(match, videoID) {
-            console.log(videoID);
             if (videoID) {
               return '<iframe src="https://player.vimeo.com/video/' + videoID + '" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
             }
