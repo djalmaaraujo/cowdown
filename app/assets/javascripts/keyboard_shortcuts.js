@@ -1,6 +1,6 @@
 $(function () {
   Mousetrap.bind('mod+s', function(e) {
-    FileUtils.chooseFile('#gui-save');
+    FileUtils.saveNewOrUpdate();
     e.preventDefault();
   });
 });

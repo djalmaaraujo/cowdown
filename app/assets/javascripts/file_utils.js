@@ -4,16 +4,43 @@
       var chooser = $(name);
 
       chooser.change(function(e) {
-        var filename = $(this).val()
+        var filePath = $(this).val()
         var code     = CowdowApp.getCode()
+        var name     = FileUtils.getFileName(filePath)
 
-        fs.writeFile(filename, code);
-        document.title = filename + ' saved!';
+        FileUtils.updateFile(filePath, code);
+
+        FILEOPTS.saved    = true;
+        FILEOPTS.opened   = true;
+        FILEOPTS.fileName = name;
+        FILEOPTS.filePath = filePath;
+
+        document.title = name + ' saved!';
 
         e.preventDefault();
       });
 
       chooser.trigger('click');
+    },
+
+    getFileName: function(filePath) {
+      return filePath.split('/').reverse()[0];
+    },
+
+    saveNewOrUpdate: function() {
+      if (FILEOPTS.opened) {
+        FileUtils.updateFile(FILEOPTS.filePath);
+        document.title = FILEOPTS.fileName + ' updated!';
+      }
+      else {
+        FileUtils.chooseFile('#gui-save');
+      }
+    },
+
+    updateFile: function(filePath) {
+      var code = CowdowApp.getCode();
+
+      fs.writeFile(filePath, code);
     }
   };
 

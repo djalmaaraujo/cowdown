@@ -21,7 +21,7 @@ menu.items[0].submenu.append(new gui.MenuItem({
 menu.items[0].submenu.append(new gui.MenuItem({
   label: 'Save',
   click: function () {
-    FileUtils.chooseFile('#gui-save');
+    FileUtils.saveNewOrUpdate();
   }
 }));
 
