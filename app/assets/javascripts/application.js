@@ -1,6 +1,7 @@
 $(function () {
   window.CowdowApp = new Cowdow(Showdown.converter);
 
-  var textarea = document.getElementById('cowdown-textarea');
-  tabOverride.set(textarea);
+  $('textarea')
+    .on('keydown', tabOverride.handlers.keydown)
+    .on('keypress', tabOverride.handlers.keypress);
 });
