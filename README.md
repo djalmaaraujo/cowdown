@@ -13,9 +13,11 @@ A simple app using node-webkit.
 * Github ~~strike trough~~ like
 * Twitter #hashtag and @username links
 * Table style support
-* Google prettify for code highlight
 * Youtube Extension added. To use ```[youtube](https://youtubelink)```
 * Vimeo Extension added. To use ```[vimeo](https://vimeolinknk)```
+* Keyboard shortcuts
+  * Save (cmd+S)
+  * Indentation Inside Textarea (tab or shift+tb)
 
 ## Goals
 * Better code highlight
