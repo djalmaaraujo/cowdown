@@ -14,6 +14,7 @@
     "showdown": "~0.3.1",
     "zepto": "~1.1.4",
     "google-code-prettify": "~1.0.2",
-    "mousetrap": "~1.4.6"
+    "mousetrap": "~1.4.6",
+    "taboverride": "~4.0.2"
   }
 }
