@@ -4,7 +4,7 @@
       { type: 'lang', filter: function(source){
           return source.replace(/\[youtube\]\(.*\?v=(.*)\)/gi, function(match, videoID) {
             if (videoID) {
-              return '<iframe width="100%" height="480" src="https://www.youtube.com/embed/' + videoID + '" frameborder="0" allowfullscreen></iframe>';
+              return '<img src="http://img.youtube.com/vi/' + videoID + '/0.jpg" />';
             }
           });
       }}
