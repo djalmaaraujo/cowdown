@@ -28,9 +28,11 @@ body,
 .cowdown-code {
   width: 50%;
   float: left;
-  overflow-y: scroll;
 }
 
+.cowdown-code {
+  overflow: hidden;
+}
 .cowdown-code textarea {
   background: $background-code-color;
   color: white;
@@ -46,6 +48,7 @@ body,
   padding: 20px;
   margin: 0;
   word-wrap: break-word;
+  overflow-y: scroll;
 }
 
 img {

@@ -34,10 +34,14 @@ body,
 .cowdown-code {
   width: 50%;
   float: left;
-  overflow-y: scroll;
 }
 
-/* line 34, sass/partials/_base.scss */
+/* line 33, sass/partials/_base.scss */
+.cowdown-code {
+  overflow: hidden;
+}
+
+/* line 36, sass/partials/_base.scss */
 .cowdown-code textarea {
   background: #282828;
   color: white;
@@ -48,15 +52,16 @@ body,
   text-rendering: optimizeSpeed;
 }
 
-/* line 44, sass/partials/_base.scss */
+/* line 46, sass/partials/_base.scss */
 .cowdown-preview {
   background: white;
   padding: 20px;
   margin: 0;
   word-wrap: break-word;
+  overflow-y: scroll;
 }
 
-/* line 51, sass/partials/_base.scss */
+/* line 54, sass/partials/_base.scss */
 img {
   width: 100%;
 }
