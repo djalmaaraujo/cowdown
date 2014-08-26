@@ -5,8 +5,8 @@
   box-sizing: border-box;
 }
 
-/* line 5, sass/partials/_resets.scss */
-img {
+/* line 6, sass/partials/_resets.scss */
+.cowdown-app img {
   width: 100%;
 }
 
