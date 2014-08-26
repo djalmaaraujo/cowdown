@@ -21,3 +21,8 @@
   width: 100%;
   clear: both;
 }
+
+/* line 14, sass/print.scss */
+header.header {
+  display: none;
+}
