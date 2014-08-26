@@ -18,4 +18,8 @@ $(function () {
     FAKE_TAB_EVENT.shiftKey = true;
     tabOverride.handlers.keydown(FAKE_TAB_EVENT);
   });
+
+  Mousetrap.bind('mod+p', function(e) {
+    window.print();
+  });
 });
