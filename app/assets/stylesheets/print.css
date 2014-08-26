@@ -1,0 +1,23 @@
+/* line 1, sass/partials/_resets.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, sass/partials/_resets.scss */
+img {
+  width: 100%;
+}
+
+/* line 4, sass/print.scss */
+.cowdown-code {
+  display: none;
+  width: 100%;
+}
+
+/* line 9, sass/print.scss */
+.cowdown-preview {
+  width: 100%;
+  clear: both;
+}
