@@ -10,7 +10,9 @@ menu.append(new gui.MenuItem({
 menu.items[0].submenu.append(new gui.MenuItem({
   label: 'New File',
   click: function () {
-    gui.Window.open('index.html');
+    gui.Window.open('index.html', {
+      toolbar: false
+    });
   }
 }));
 
