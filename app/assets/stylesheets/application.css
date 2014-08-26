@@ -1,18 +1,23 @@
-/* line 3, sass/partials/_base.scss */
+/* line 1, sass/partials/_resets.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 8, sass/partials/_base.scss */
+/* line 5, sass/partials/_resets.scss */
+img {
+  width: 100%;
+}
+
+/* line 4, sass/partials/_base.scss */
 html,
 body {
   background: #282828;
   overflow: hidden;
 }
 
-/* line 18, sass/partials/_base.scss */
+/* line 14, sass/partials/_base.scss */
 html,
 body,
 .cowdown-app,
@@ -23,25 +28,25 @@ body,
   height: 100%;
 }
 
-/* line 23, sass/partials/_base.scss */
+/* line 19, sass/partials/_base.scss */
 .cowdown-app {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 28, sass/partials/_base.scss */
+/* line 24, sass/partials/_base.scss */
 .cowdown-preview,
 .cowdown-code {
   width: 50%;
   float: left;
 }
 
-/* line 33, sass/partials/_base.scss */
+/* line 29, sass/partials/_base.scss */
 .cowdown-code {
   overflow: hidden;
 }
 
-/* line 36, sass/partials/_base.scss */
+/* line 32, sass/partials/_base.scss */
 .cowdown-code textarea {
   background: #282828;
   color: white;
@@ -52,18 +57,13 @@ body,
   text-rendering: optimizeSpeed;
 }
 
-/* line 46, sass/partials/_base.scss */
+/* line 42, sass/partials/_base.scss */
 .cowdown-preview {
   background: white;
   padding: 20px;
   margin: 0;
   word-wrap: break-word;
   overflow-y: scroll;
-}
-
-/* line 54, sass/partials/_base.scss */
-img {
-  width: 100%;
 }
 
 /* line 8, sass/partials/_table.scss */

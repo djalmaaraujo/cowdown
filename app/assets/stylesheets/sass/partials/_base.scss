@@ -1,9 +1,5 @@
 $background-code-color: #282828;
 
-*, *:before, *:after {
-  @include box-sizing(border-box);
-}
-
 html,
 body {
   background: $background-code-color;
@@ -49,8 +45,4 @@ body,
   margin: 0;
   word-wrap: break-word;
   overflow-y: scroll;
-}
-
-img {
-  width: 100%;
 }
