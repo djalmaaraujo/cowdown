@@ -1,0 +1,43 @@
+.header {
+  @include background-image(linear-gradient(#f6f6f6, #d4d4d4));
+  @include border-radius(4px 4px 0 0);
+  height: 38px;
+  -webkit-app-region: drag;
+}
+
+.header-controls,
+.header-brand {
+  float: left;
+  display: block;
+}
+
+.header-controls {
+  width: 20%;
+  padding: 12px 0 0 9px;
+
+  a {
+    text-indent: -20000px;
+    overflow: hidden;
+    display: block;
+    float: left;
+    margin-right: 6px;
+  }
+}
+
+.header-brand {
+  text-align: right;
+  padding-right: 6px;
+  width: 80%;
+}
+
+.header-logo {
+  background: url(../images/cowdown-header-icon.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 35px;
+  height: 35px;
+  display: block;
+  text-indent: 200000px;
+  float: right;
+}

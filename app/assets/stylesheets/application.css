@@ -1,3 +1,141 @@
+/* line 202, ../images/icons/*.png */
+.icons-sprite, .icons-traffic-close-down-graphite, .icons-traffic-close-down, .icons-traffic-close-hover-graphite, .icons-traffic-close, .icons-traffic-disabled, .icons-traffic-fullscreen-down-graphite, .icons-traffic-fullscreen-down, .icons-traffic-fullscreen-hover-graphite, .icons-traffic-fullscreen, .icons-traffic-graphite, .icons-traffic-minimise-down-graphite, .icons-traffic-minimise-down, .icons-traffic-minimise-hover-graphite, .icons-traffic-minimise, .icons-traffic-zoom-down-graphite, .icons-traffic-zoom-down, .icons-traffic-zoom-hover-graphite, .icons-traffic-zoom-hover {
+  background: url('../images/../images/icons-s6f4acf0ac4.png') no-repeat;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-close-down-graphite {
+  background-position: 0 -96px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-close-down {
+  background-position: 0 -48px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-close-hover-graphite {
+  background-position: 0 -72px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-close {
+  background-position: 0 -336px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-disabled {
+  background-position: 0 -480px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-fullscreen-down-graphite {
+  background-position: 0 -216px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-fullscreen-down {
+  background-position: 0 -120px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-fullscreen-hover-graphite {
+  background-position: 0 -144px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-fullscreen {
+  background-position: 0 -288px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-graphite {
+  background-position: 0 -432px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-minimise-down-graphite {
+  background-position: 0 -360px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-minimise-down {
+  background-position: 0 -312px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-minimise-hover-graphite {
+  background-position: 0 -264px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-minimise {
+  background-position: 0 -240px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-zoom-down-graphite {
+  background-position: 0 -456px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-zoom-down {
+  background-position: 0 -384px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-zoom-hover-graphite {
+  background-position: 0 -408px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 60, ../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-traffic-zoom-hover {
+  background-position: 0 -192px;
+  height: 14px;
+  width: 14px;
+}
+
+/* line 35, sass/partials/_icons.scss */
+span[class^=icons-], i[class^=icons-] {
+  display: inline-block;
+  vertical-align: middle;
+  text-indent: -20000px;
+}
+
 /* line 1, sass/partials/_resets.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -5,8 +143,8 @@
   box-sizing: border-box;
 }
 
-/* line 5, sass/partials/_resets.scss */
-img {
+/* line 6, sass/partials/_resets.scss */
+.cowdown-app img {
   width: 100%;
 }
 
@@ -64,6 +202,63 @@ body,
   margin: 0;
   word-wrap: break-word;
   overflow-y: scroll;
+}
+
+/* line 1, sass/partials/_header.scss */
+.header {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(100%, #d4d4d4));
+  background-image: -webkit-linear-gradient(#f6f6f6, #d4d4d4);
+  background-image: -moz-linear-gradient(#f6f6f6, #d4d4d4);
+  background-image: -o-linear-gradient(#f6f6f6, #d4d4d4);
+  background-image: linear-gradient(#f6f6f6, #d4d4d4);
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -ms-border-radius: 4px 4px 0 0;
+  -o-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  height: 38px;
+  -webkit-app-region: drag;
+}
+
+/* line 9, sass/partials/_header.scss */
+.header-controls,
+.header-brand {
+  float: left;
+  display: block;
+}
+
+/* line 14, sass/partials/_header.scss */
+.header-controls {
+  width: 20%;
+  padding: 12px 0 0 9px;
+}
+/* line 18, sass/partials/_header.scss */
+.header-controls a {
+  text-indent: -20000px;
+  overflow: hidden;
+  display: block;
+  float: left;
+  margin-right: 6px;
+}
+
+/* line 27, sass/partials/_header.scss */
+.header-brand {
+  text-align: right;
+  padding-right: 6px;
+  width: 80%;
+}
+
+/* line 33, sass/partials/_header.scss */
+.header-logo {
+  background: url(../images/cowdown-header-icon.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 35px;
+  height: 35px;
+  display: block;
+  text-indent: 200000px;
+  float: right;
 }
 
 /* line 8, sass/partials/_table.scss */

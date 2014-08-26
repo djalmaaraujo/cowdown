@@ -1,0 +1,40 @@
+@import "compass/utilities/sprites";
+
+@mixin resize-sprite($map, $sprite, $percent) {
+  $spritePath: sprite-path($map);
+  $spriteWidth: image-width($spritePath);
+  $spriteHeight: image-height($spritePath);
+  $width: image-width(sprite-file($map, $sprite));
+  $height: image-height(sprite-file($map, $sprite));
+  @include background-size(ceil($spriteWidth * $percent / 100) ceil($spriteHeight * $percent / 100));
+  width: ceil($width * $percent / 100);
+  height: ceil($height * $percent / 100);
+  background-position: 0 floor(nth(sprite-position($map, $sprite), 2) * $percent / 100);
+}
+
+@mixin resize-sprite-set($map, $percent, $only...) {
+  $name: sprite_map_name($map);
+  @each $sprite in sprite_names($map) {
+    @if length($only) == 0 or index($only, $sprite) != false {
+      .#{$name}-#{$sprite} {
+        @include resize-sprite($map, $sprite, $percent);
+      }
+    }
+  }
+}
+
+$icons-spacing: 10px;
+
+@import "../images/icons/*.png";
+
+$icons-sprite-dimensions: true;
+
+@include all-icons-sprites;
+
+span, i {
+  &[class^=icons-] {
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: -20000px;
+  }
+}

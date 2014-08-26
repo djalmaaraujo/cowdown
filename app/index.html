@@ -8,6 +8,18 @@
     <link href="assets/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <header class="header clearfix">
+      <section class="header-controls">
+        <a href="#" class="icons-traffic-close window-control-close">X</a>
+        <a href="#" class="icons-traffic-minimise window-control-minimize">-</a>
+        <a href="#" class="icons-traffic-fullscreen window-control-fullscreen">+</a>
+      </section>
+
+      <section class="header-brand">
+        <a href="https://github.com/djalmaaraujo/cowdown" target="_blank" class="header-logo">CowDown</a>
+      </section>
+    </header>
+
     <section class="cowdown-app clearfix">
       <section class="cowdown-code">
         <textarea id="cowdown-textarea" class="mousetrap"></textarea>
@@ -31,10 +43,11 @@
     <script src="assets/javascripts/showdown/youtube.js"></script>
     <script src="assets/javascripts/showdown/vimeo.js"></script>
     <script src="assets/javascripts/cowdown.js"></script>
-    <script src="assets/javascripts/file_utils.js"></script>
-    <script src="assets/javascripts/menubar.js"></script>
+    <script src="assets/javascripts/gui/file_utils.js"></script>
+    <script src="assets/javascripts/gui/menubar.js"></script>
     <script src="assets/javascripts/application.js"></script>
     <script src="assets/javascripts/loader.js"></script>
-    <script src="assets/javascripts/keyboard_shortcuts.js"></script>
+    <script src="assets/javascripts/gui/keyboard_shortcuts.js"></script>
+    <script src="assets/javascripts/gui/window_controls.js"></script>
   </body>
 </html>
