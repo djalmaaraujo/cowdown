@@ -4,6 +4,7 @@
   Cowdow = function (converter) {
     this.code = $('.cowdown-code textarea');
     this.preview = $('.cowdown-preview');
+    this.documentTitle = $('.header-title');
     this.converter = new converter({ extensions: ['prettify', 'table', 'twitter', 'youtube', 'vimeo', 'github'] });
     this.listener();
   };
@@ -27,7 +28,7 @@
 
   Cowdow.prototype.makeStats = function() {
     var chars = this.getCode().length;
-    document.title = COWDOWN_TITLE + ' - ' + chars + ' chars';
+    this.documentTitle.html(COWDOWN_TITLE + ' - ' + chars + ' chars');
   };
 
   Cowdow.prototype.makePreview = function() {

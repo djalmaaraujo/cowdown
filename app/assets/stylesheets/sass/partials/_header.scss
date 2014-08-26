@@ -6,7 +6,8 @@
 }
 
 .header-controls,
-.header-brand {
+.header-brand,
+.header-title {
   float: left;
   display: block;
 }
@@ -24,10 +25,17 @@
   }
 }
 
+.header-title {
+  text-align: center;
+  width: 60%;
+  font-size: 12px;
+  line-height: 36px;
+}
+
 .header-brand {
   text-align: right;
   padding-right: 6px;
-  width: 80%;
+  width: 20%;
 }
 
 .header-logo {

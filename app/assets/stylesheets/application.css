@@ -220,19 +220,20 @@ body,
   -webkit-app-region: drag;
 }
 
-/* line 9, sass/partials/_header.scss */
+/* line 10, sass/partials/_header.scss */
 .header-controls,
-.header-brand {
+.header-brand,
+.header-title {
   float: left;
   display: block;
 }
 
-/* line 14, sass/partials/_header.scss */
+/* line 15, sass/partials/_header.scss */
 .header-controls {
   width: 20%;
   padding: 12px 0 0 9px;
 }
-/* line 18, sass/partials/_header.scss */
+/* line 19, sass/partials/_header.scss */
 .header-controls a {
   text-indent: -20000px;
   overflow: hidden;
@@ -241,14 +242,22 @@ body,
   margin-right: 6px;
 }
 
-/* line 27, sass/partials/_header.scss */
+/* line 28, sass/partials/_header.scss */
+.header-title {
+  text-align: center;
+  width: 60%;
+  font-size: 12px;
+  line-height: 36px;
+}
+
+/* line 35, sass/partials/_header.scss */
 .header-brand {
   text-align: right;
   padding-right: 6px;
-  width: 80%;
+  width: 20%;
 }
 
-/* line 33, sass/partials/_header.scss */
+/* line 41, sass/partials/_header.scss */
 .header-logo {
   background: url(../images/cowdown-header-icon.png);
   background-size: 90%;

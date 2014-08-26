@@ -15,7 +15,7 @@
         FILEOPTS.fileName = name;
         FILEOPTS.filePath = filePath;
 
-        document.title = name + ' saved!';
+        $('.header-title').html(name + ' saved!');
 
         e.preventDefault();
       });
@@ -30,7 +30,7 @@
     saveNewOrUpdate: function() {
       if (FILEOPTS.opened) {
         FileUtils.updateFile(FILEOPTS.filePath);
-        document.title = FILEOPTS.fileName + ' updated!';
+        $('.header-title').html(FILEOPTS.fileName + ' updated!');
       }
       else {
         FileUtils.chooseFile('#gui-save');
