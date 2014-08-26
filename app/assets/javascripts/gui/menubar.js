@@ -1,6 +1,7 @@
 var gui     = require('nw.gui');
 var fs      = require('fs');
 var win     = gui.Window.get();
+
 win.menu    = new gui.Menu({ type: 'menubar' });
 
 win.menu.insert(new gui.MenuItem({
