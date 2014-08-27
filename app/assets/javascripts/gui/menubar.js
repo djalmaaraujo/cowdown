@@ -26,7 +26,7 @@ win.menu.items[1].submenu.append(new gui.MenuItem({
 }));
 
 win.menu.items[1].submenu.append(new gui.MenuItem({
-  label: 'Open ...',
+  label: 'Open...',
   click: function () {
     FileUtils.OpenNewFile();
   }
@@ -36,6 +36,13 @@ win.menu.items[1].submenu.append(new gui.MenuItem({
   label: 'Save',
   click: function () {
     FileUtils.saveNewOrUpdate();
+  }
+}));
+
+win.menu.items[1].submenu.append(new gui.MenuItem({
+  label: 'Save As...',
+  click: function () {
+    FileUtils.chooseFile('#gui-save');
   }
 }));
 
