@@ -3,7 +3,7 @@ var fs            = require('fs');
 var win           = gui.Window.get();
 var nativeMenuBar = new gui.Menu({ type: "menubar" });
 
-nativeMenuBar.createMacBuiltin("CownDown", {
+nativeMenuBar.createMacBuiltin("CowDown", {
 });
 
 win.menu = nativeMenuBar;
