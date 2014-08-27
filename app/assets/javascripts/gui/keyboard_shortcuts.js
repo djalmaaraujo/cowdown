@@ -1,7 +1,11 @@
 $(function () {
-  var FAKE_TAB_EVENT = {
+  var fakeTabEvent = {
     currentTarget: document.getElementById('cowdown-textarea'),
     keyCode: 9 // this is the default
+  };
+
+  var fakeGuiEvent = {
+    preventDefault: function () {}
   };
 
   Mousetrap.bind('mod+s', function(e) {
@@ -10,16 +14,20 @@ $(function () {
   });
 
   Mousetrap.bind('mod+]', function(e) {
-    FAKE_TAB_EVENT.shiftKey = false;
-    tabOverride.handlers.keydown(FAKE_TAB_EVENT);
+    fakeTabEvent.shiftKey = false;
+    tabOverride.handlers.keydown(fakeTabEvent);
   });
 
   Mousetrap.bind('mod+[', function(e) {
-    FAKE_TAB_EVENT.shiftKey = true;
-    tabOverride.handlers.keydown(FAKE_TAB_EVENT);
+    fakeTabEvent.shiftKey = true;
+    tabOverride.handlers.keydown(fakeTabEvent);
   });
 
   Mousetrap.bind('mod+p', function(e) {
     window.print();
+  });
+
+  Mousetrap.bind('mod+w', function(e) {
+    winControl.bindClose(fakeGuiEvent);
   });
 });

@@ -46,5 +46,5 @@
 })();
 
 $(function () {
-  new WindowControl();
+  window.winControl = new WindowControl();
 });
