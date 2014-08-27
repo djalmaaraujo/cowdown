@@ -3,10 +3,9 @@
   "title": "CowDown",
   "icon": "nw.icns",
   "background": "background.png",
-  "icon-size": 80,
+  "icon-size": 150,
   "contents": [
-    { "x": 192, "y": 344, "type": "link", "path": "/Applications" },
-    { "x": 448, "y": 344, "type": "file", "path": "Cowdown.app" }
+    { "x": 470, "y": 260, "type": "link", "path": "/Applications" },
+    { "x": 182, "y": 260, "type": "file", "path": "CowDown.app" }
   ]
-
 }
