@@ -34,6 +34,10 @@ A simple app using node-webkit.
 * Make CSS chances on the SASS directory
 * Run ```compass watch```
 
+## Authors
+* Djalma Araújo
+* Vitor Fernandes (Designer) [Dribbble](https://dribbble.com/shots/1700292-Cowdown-Icon?list=users&offset=0)
+
 ## License
 [MIT License](http://djalmaaraujo.mit-license.org)
 
