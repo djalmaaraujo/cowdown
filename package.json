@@ -25,5 +25,12 @@
   "dependencies": {
     "q": "^1.0.1",
     "request": "^2.40.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-shell": "^0.2.9",
+    "gulp-util": "~3.0.0",
+    "node-webkit-builder": "^0.1.2",
+    "rimraf": "~2.2.8"
   }
 }
