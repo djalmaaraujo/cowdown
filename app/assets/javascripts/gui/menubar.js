@@ -21,7 +21,8 @@ win.menu.items[1].submenu.append(new gui.MenuItem({
   label: 'New File',
   click: function () {
     gui.Window.open('index.html', {
-      toolbar: false
+      toolbar: false,
+      frame: false
     });
   }
 }));

@@ -10,7 +10,7 @@
   ],
   "window": {
     "title": "Cowdown",
-    "icon": "link.png",
+    "icon": "./app/assets/images/cowdown.png",
     "toolbar": false,
     "frame": false,
     "width": 800,
