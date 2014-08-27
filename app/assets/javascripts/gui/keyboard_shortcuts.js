@@ -14,6 +14,12 @@ $(function () {
     FileUtils.saveNewOrUpdate();
   });
 
+  Mousetrap.bind('mod+shift+s', function(e) {
+    e.preventDefault();
+
+    FileUtils.chooseFile('#gui-save');
+  });
+
   Mousetrap.bind('mod+]', function(e) {
     e.preventDefault();
 
