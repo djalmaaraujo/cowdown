@@ -3,8 +3,7 @@ var fs            = require('fs');
 var win           = gui.Window.get();
 var nativeMenuBar = new gui.Menu({ type: "menubar" });
 
-nativeMenuBar.createMacBuiltin("CowDown", {
-});
+nativeMenuBar.createMacBuiltin("CowDown");
 
 win.menu = nativeMenuBar;
 
@@ -46,3 +45,15 @@ win.menu.items[1].submenu.append(new gui.MenuItem({
     gui.Window.get().close();
   }
 }));
+
+win.menu.items[0].submenu.insert(new gui.MenuItem({
+  label: 'CowDown Syntax Help',
+  click: function () {
+    FileLoader.load('./app/assets/help.md');
+
+    FILEOPTS.saved    = false;
+    FILEOPTS.opened   = false;
+    FILEOPTS.fileName = null;
+    FILEOPTS.filePath = null;
+  }
+}), 1);
