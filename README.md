@@ -1,4 +1,4 @@
-# Cowdown - Another markdown app
+﻿# Cowdown - Another markdown app
 
 ![image](http://i.imgur.com/tuOMoHp.png?1)
 
@@ -36,15 +36,9 @@ A simple app using node-webkit.
 * Make CSS chances on the SASS directory
 * Run ```compass watch```
 
-## Build Proccess (For Mac)
-1. Go to cowdown root folder
-2. Zip folder ```zip -r ../${PWD##*/}.nw *``` (remove build & brand folder before)
-3. Rename cowdown.nw to app.nw
-4. Replace app.nw in /Applications/CowDown.app/Contents/Resources with
-5. Paste CowDown.app into build folder
-6. Edit info.plist with new versions
-7. Go to terminal, run ```appdmg appdmg.json CowDown.dmg```
-8. Done. (Sorry, still working on an automated proccess)
+## Build Proccess (For Mac / Windows / Linux 64)
+1. gulp build
+2. Still trying to figure out how to pack for all environments. Maybe Windows installer and appdmg for mac.
 
 ## Authors
 * Djalma Araújo
