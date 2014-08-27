@@ -30,4 +30,8 @@ $(function () {
   Mousetrap.bind('mod+w', function(e) {
     winControl.bindClose(fakeGuiEvent);
   });
+
+  Mousetrap.bind('mod+n', function(e) {
+    GuiUtils.newFile();
+  });
 });
