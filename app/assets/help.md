@@ -1,3 +1,5 @@
+![image](http://i.imgur.com/tuOMoHp.png?1)
+
 # Moooooooooo
 
 Welcome to Cowdown. Just another Markdown application.
@@ -43,7 +45,7 @@ Spain.
 ###### Titles
 
 ## Images
-![image](https://raw.githubusercontent.com/djalmaaraujo/cowdown/master/preview.png)
+![image](http://i.imgur.com/CwC6ePx.png?)
 
 ## Table Extension
 
