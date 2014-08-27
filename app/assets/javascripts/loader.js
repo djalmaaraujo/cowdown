@@ -24,4 +24,9 @@
 
 $(function () {
   FileLoader.load('./app/assets/help.md');
+
+  FILEOPTS.saved    = false;
+  FILEOPTS.opened   = false;
+  FILEOPTS.fileName = null;
+  FILEOPTS.filePath = null;
 });

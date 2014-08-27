@@ -4,4 +4,6 @@ $(function () {
   $('textarea')
     .on('keydown', tabOverride.handlers.keydown)
     .on('keypress', tabOverride.handlers.keypress);
+
+  CowdowApp.updatePreview();
 });
