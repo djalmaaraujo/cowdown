@@ -30,7 +30,6 @@
     saveNewOrUpdate: function() {
       if (FILEOPTS.opened) {
         FileUtils.updateFile(FILEOPTS.filePath);
-        $('.header-title').html(FILEOPTS.fileName + ' updated!');
       }
       else {
         FileUtils.chooseFile('#gui-save');
@@ -40,7 +39,13 @@
     updateFile: function(filePath) {
       var code = CowdowApp.getCode();
 
-      fs.writeFile(filePath, code);
+      fs.writeFile(filePath, '\ufeff'+code, 'utf8', function (err) {
+        if (!err) {
+          $('.header-title').html(FILEOPTS.fileName + ' updated!');
+        } else {
+          alert('Error when saving the file.');
+        }
+      });
     },
 
     OpenNewFile: function() {
