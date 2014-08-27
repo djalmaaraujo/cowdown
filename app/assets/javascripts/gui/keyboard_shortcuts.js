@@ -9,29 +9,46 @@ $(function () {
   };
 
   Mousetrap.bind('mod+s', function(e) {
-    FileUtils.saveNewOrUpdate();
     e.preventDefault();
+
+    FileUtils.saveNewOrUpdate();
   });
 
   Mousetrap.bind('mod+]', function(e) {
+    e.preventDefault();
+
     fakeTabEvent.shiftKey = false;
     tabOverride.handlers.keydown(fakeTabEvent);
   });
 
   Mousetrap.bind('mod+[', function(e) {
+    e.preventDefault();
+
     fakeTabEvent.shiftKey = true;
     tabOverride.handlers.keydown(fakeTabEvent);
   });
 
   Mousetrap.bind('mod+p', function(e) {
+    e.preventDefault();
+
     window.print();
   });
 
   Mousetrap.bind('mod+w', function(e) {
+    e.preventDefault();
+
     winControl.bindClose(fakeGuiEvent);
   });
 
   Mousetrap.bind('mod+n', function(e) {
+    e.preventDefault();
+
     GuiUtils.newFile();
+  });
+
+  Mousetrap.bind('mod+o', function(e) {
+    e.preventDefault();
+
+    FileUtils.OpenNewFile();
   });
 });

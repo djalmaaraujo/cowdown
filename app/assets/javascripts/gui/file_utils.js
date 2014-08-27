@@ -41,6 +41,16 @@
       var code = CowdowApp.getCode();
 
       fs.writeFile(filePath, code);
+    },
+
+    OpenNewFile: function() {
+      var chooser = $('#gui-open');
+
+      chooser.change(function(evt) {
+        FileLoader.load($(this).val());
+      });
+
+      chooser.trigger('click');
     }
   };
 
