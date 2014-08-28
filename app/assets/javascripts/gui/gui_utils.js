@@ -1,7 +1,7 @@
 (function () {
   var gui = require('nw.gui');
 
-  window.GuiUtils = {
+  var GuiUtils = {
     newFile: function() {
       gui.Window.open('index.html', {
         toolbar: false,
@@ -9,4 +9,6 @@
       });
     }
   };
+
+  window.GuiUtils = GuiUtils;
 })();
