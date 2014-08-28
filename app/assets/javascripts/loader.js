@@ -1,7 +1,7 @@
 (function () {
   var fs = require('fs');
 
-  window.FileLoader = {
+  var FileLoader = {
     load: function(filePath) {
       if (fs.existsSync(filePath)) {
         var data = fs.readFileSync(filePath);
@@ -20,4 +20,6 @@
       }
     }
   };
+
+  window.FileLoader = FileLoader;
 })();
