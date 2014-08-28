@@ -1,66 +1,82 @@
-var gui           = require('nw.gui');
-var fs            = require('fs');
-var win           = gui.Window.get();
-var nativeMenuBar = new gui.Menu({ type: "menubar" });
+(function () {
+  var gui           = require('nw.gui');
+  var fs            = require('fs');
+  var win           = gui.Window.get();
+  var nativeMenuBar = new gui.Menu({ type: "menubar" });
 
-nativeMenuBar.createMacBuiltin("CowDown");
+  nativeMenuBar.createMacBuiltin("CowDown");
+  win.menu = nativeMenuBar;
 
-win.menu = nativeMenuBar;
+  var MenuBar = function () {
+    this.createFileMenu();
+    this.createAppNameMenu();
+  };
 
-var fileMenu = new gui.MenuItem({
-  label: 'File',
-  submenu: new gui.Menu()
-});
+  MenuBar.prototype.createAppNameMenu = function () {
+    win.menu.items[0].submenu.insert(new gui.MenuItem({
+      label: 'CowDown Syntax Help',
+      click: function () {
+        FileLoader.load('./app/assets/help.md');
 
-win.menu.insert(fileMenu, 1);
+        FILEOPTS.saved    = false;
+        FILEOPTS.opened   = false;
+        FILEOPTS.fileName = null;
+        FILEOPTS.filePath = null;
+      }
+    }), 1);
+  };
 
-win.menu.items[1].submenu.append(new gui.MenuItem({
-  label: 'New File',
-  click: function () {
-    GuiUtils.newFile();
-  }
-}));
+  MenuBar.prototype.appendMenu = function (level, menu) {
+    win.menu.items[level].submenu.append(menu);
+  };
 
-win.menu.items[1].submenu.append(new gui.MenuItem({
-  type: 'separator'
-}));
+  MenuBar.prototype.createFileMenu = function () {
+    var fileMenu = new gui.MenuItem({
+      label: 'File',
+      submenu: new gui.Menu()
+    });
 
-win.menu.items[1].submenu.append(new gui.MenuItem({
-  label: 'Open...',
-  click: function () {
-    FileUtils.OpenNewFile();
-  }
-}));
+    win.menu.insert(fileMenu, 1);
 
-win.menu.items[1].submenu.append(new gui.MenuItem({
-  label: 'Save',
-  click: function () {
-    FileUtils.saveNewOrUpdate();
-  }
-}));
+    this.appendMenu(1, new gui.MenuItem({
+      label: 'New File',
+      click: function () {
+        GuiUtils.newFile();
+      }
+    }));
 
-win.menu.items[1].submenu.append(new gui.MenuItem({
-  label: 'Save As...',
-  click: function () {
-    FileUtils.chooseFile('#gui-save');
-  }
-}));
+    this.appendMenu(1, new gui.MenuItem({
+      type: 'separator'
+    }));
 
-win.menu.items[1].submenu.append(new gui.MenuItem({
-  label: 'Quit',
-  click: function () {
-    gui.Window.get().close();
-  }
-}));
+    this.appendMenu(1, new gui.MenuItem({
+      label: 'Open...',
+      click: function () {
+        FileUtils.OpenNewFile();
+      }
+    }));
 
-win.menu.items[0].submenu.insert(new gui.MenuItem({
-  label: 'CowDown Syntax Help',
-  click: function () {
-    FileLoader.load('./app/assets/help.md');
+    this.appendMenu(1, new gui.MenuItem({
+      label: 'Save',
+      click: function () {
+        FileUtils.saveNewOrUpdate();
+      }
+    }));
 
-    FILEOPTS.saved    = false;
-    FILEOPTS.opened   = false;
-    FILEOPTS.fileName = null;
-    FILEOPTS.filePath = null;
-  }
-}), 1);
+    this.appendMenu(1, new gui.MenuItem({
+      label: 'Save As...',
+      click: function () {
+        FileUtils.chooseFile('#gui-save');
+      }
+    }));
+
+    this.appendMenu(1, new gui.MenuItem({
+      label: 'Quit',
+      click: function () {
+        gui.Window.get().close();
+      }
+    }));
+  };
+
+  new MenuBar();
+})();

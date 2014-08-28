@@ -14,8 +14,8 @@
 
           $('.cowdown-code textarea').val(data.toString('utf-8'));
 
-          CowdowApp.updatePreview();
           CowdowApp.code.focus();
+          CowdowApp.updatePreview();
         }
       }
     }
