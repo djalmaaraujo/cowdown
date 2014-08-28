@@ -40,7 +40,7 @@ $(function () {
     window.print();
   });
 
-  Mousetrap.bind('mod+w', function(e) {
+  Mousetrap.bind(['mod+w', 'mod+q'], function(e) {
     e.preventDefault();
 
     winControl.bindClose(fakeGuiEvent);
