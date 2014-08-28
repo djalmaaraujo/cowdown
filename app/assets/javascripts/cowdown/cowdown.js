@@ -1,6 +1,6 @@
 (function () {
   COWDOWN_TITLE = 'Cowdown';
-  EXTENSIONS    = ['prettify', 'table', 'twitter', 'youtube', 'vimeo', 'github', 'gravatar'];
+  EXTENSIONS    = ['table', 'twitter', 'youtube', 'vimeo', 'github', 'gravatar'];
 
   Cowdow = function (converter) {
     this.code          = $('.cowdown-code textarea');
