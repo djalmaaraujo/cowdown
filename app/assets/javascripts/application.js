@@ -6,4 +6,5 @@ $(function () {
     .on('keypress', tabOverride.handlers.keypress);
 
   CowdowApp.updatePreview();
+  CowdowApp.code.focus();
 });
