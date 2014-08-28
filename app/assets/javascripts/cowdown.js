@@ -5,7 +5,7 @@
     this.code = $('.cowdown-code textarea');
     this.preview = $('.cowdown-preview');
     this.documentTitle = $('.header-title');
-    this.converter = new converter({ extensions: ['prettify', 'table', 'twitter', 'youtube', 'vimeo', 'github'] });
+    this.converter = new converter({ extensions: ['prettify', 'table', 'twitter', 'youtube', 'vimeo', 'github', 'gravatar'] });
     this.listener();
   };
 

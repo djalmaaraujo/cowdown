@@ -11,6 +11,7 @@ A simple app using node-webkit.
 * Windows: (soon)
 
 ## Features/Goals
+* ~~Gravatar Extension~~  To use ```[gravatar](djalma.araujo@gmail.com)```
 * ~~Github strike trough like~~
 * ~~Twitter #hashtag and @username links~~
 * ~~Table style support~~

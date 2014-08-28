@@ -88,3 +88,6 @@ $(function () {
 
 ## Vimeo Extension
 [vimeo](http://vimeo.com/100693599)
+
+## Gravatar Extension
+[gravatar](djalma.araujo@gmail.com)
