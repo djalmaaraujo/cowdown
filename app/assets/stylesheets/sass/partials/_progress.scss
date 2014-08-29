@@ -1,0 +1,21 @@
+.progress-bar {
+  @include border-radius(10px);
+  display: none;
+  height: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fce1c5;
+  overflow: hidden;
+}
+
+.progress-bar-value {
+  width: 1%;
+  background: #fb627b;
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #212030;
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: 4px;
+}

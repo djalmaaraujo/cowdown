@@ -155,7 +155,7 @@ body {
   overflow: hidden;
 }
 
-/* line 14, sass/partials/_base.scss */
+/* line 15, sass/partials/_base.scss */
 html,
 body,
 .cowdown-app,
@@ -166,25 +166,25 @@ body,
   height: 100%;
 }
 
-/* line 19, sass/partials/_base.scss */
+/* line 20, sass/partials/_base.scss */
 .cowdown-app {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 24, sass/partials/_base.scss */
+/* line 25, sass/partials/_base.scss */
 .cowdown-preview,
 .cowdown-code {
   width: 50%;
   float: left;
 }
 
-/* line 29, sass/partials/_base.scss */
+/* line 30, sass/partials/_base.scss */
 .cowdown-code {
   overflow: hidden;
 }
 
-/* line 32, sass/partials/_base.scss */
+/* line 33, sass/partials/_base.scss */
 .cowdown-code textarea {
   background: #282828;
   color: white;
@@ -195,13 +195,20 @@ body,
   text-rendering: optimizeSpeed;
 }
 
-/* line 42, sass/partials/_base.scss */
+/* line 43, sass/partials/_base.scss */
 .cowdown-preview {
   background: white;
   padding: 20px;
   margin: 0;
   word-wrap: break-word;
   overflow-y: scroll;
+}
+
+/* line 51, sass/partials/_base.scss */
+.cowdown-app.disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 /* line 1, sass/partials/_header.scss */
@@ -301,4 +308,63 @@ table tbody tr:nth-child(2n) {
 /* line 33, sass/partials/_table.scss */
 table tbody tr td {
   padding: 5px 10px;
+}
+
+/* line 1, sass/partials/_dialogs.scss */
+.dialog {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 22px 70px 4px rgba(0, 0, 0, 0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 22px 70px 4px rgba(0, 0, 0, 0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 22px 70px 4px rgba(0, 0, 0, 0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  background: -webkit-linear-gradient(#e9e9e9, #b2b2b2 21px, #6a6a6a 1px, #ededed, #ededed 23px);
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 220px;
+  margin-left: -110px;
+  margin-top: -65px;
+  height: 130px;
+  z-index: 999;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* line 18, sass/partials/_dialogs.scss */
+.dialog-content {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 14px;
+}
+
+/* line 1, sass/partials/_progress.scss */
+.progress-bar {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  display: none;
+  height: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fce1c5;
+  overflow: hidden;
+}
+
+/* line 11, sass/partials/_progress.scss */
+.progress-bar-value {
+  width: 1%;
+  background: #fb627b;
+  height: 100%;
+  display: block;
+  text-align: center;
+  color: #212030;
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: 4px;
 }

@@ -6,6 +6,7 @@ body {
   overflow: hidden;
 }
 
+
 html,
 body,
 .cowdown-app,
@@ -45,4 +46,9 @@ body,
   margin: 0;
   word-wrap: break-word;
   overflow-y: scroll;
+}
+
+.cowdown-app.disabled {
+  @include opacity(.5);
+  pointer-events: none;
 }

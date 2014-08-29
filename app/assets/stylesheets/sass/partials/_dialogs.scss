@@ -1,0 +1,22 @@
+.dialog {
+  @include border-radius(5px);
+  @include box-shadow(inset 0 1px 0 rgba(255,255,255,.6), 0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3));
+  background: -webkit-linear-gradient(rgba(233, 233, 233, 1.0), rgba(178, 178, 178, 1.0) 21px, #6A6A6A 1px, #EDEDED, #EDEDED 23px);
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 220px;
+  margin-left: -110px;
+  margin-top: -65px;
+  height: 130px;
+  z-index: 999;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.dialog-content {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 14px;
+}
