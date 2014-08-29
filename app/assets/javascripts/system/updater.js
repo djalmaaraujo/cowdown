@@ -58,20 +58,24 @@
       alert(alertMsg);
       process.exit();
     });
-  }
+  };
 
+  AppUpdate.prototype.progressText = function(text) {
+    $dialogUpdate.find('.progress-text').html(text);
+  };
 
-  AppUpdate.prototype.onProgress = function(percentage) {
-    var value = percentage + '%';
+  AppUpdate.prototype.progressBar = function(value) {
+    var percentage = value + '%';
 
     $dialogUpdate.find('.progress-bar-value')
-      .html(value)
-      .css({width: value});
+      .html(percentage)
+      .css({ width: percentage });
+  };
 
-    if ((percentage > 1) && (percentage <= 99)) {
-    } else if (percentage == 100) {
-      $dialogUpdate.find('.progress-text').html('Installing now...');
-    }
+  AppUpdate.prototype.onProgress = function(percentage) {
+    this.progressBar(percentage);
+
+    if (percentage == 100) this.progressText('Installing now...');
   };
 
   window.AppUpdate = AppUpdate;
