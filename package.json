@@ -11,8 +11,8 @@
   "window": {
     "title": "Cowdown",
     "icon": "./app/assets/images/cowdown.png",
-    "toolbar": false,
-    "frame": false,
+    "toolbar": true,
+    "frame": true,
     "width": 800,
     "height": 500,
     "position": "mouse",
@@ -23,6 +23,7 @@
     "plugin": true
   },
   "dependencies": {
+    "node-webkit-mac-updater": "0.0.3",
     "q": "^1.0.1",
     "request": "^2.40.0"
   },

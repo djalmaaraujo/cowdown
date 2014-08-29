@@ -13,7 +13,14 @@
   };
 
   MenuBar.prototype.createAppNameMenu = function () {
-    win.menu.items[0].submenu.insert(new gui.MenuItem({
+    this.appendMenu(0, new gui.MenuItem({
+      label: 'Check for Updates...',
+      click: function () {
+        new AppUpdate();
+      }
+    }), 1);
+
+    this.appendMenu(0, new gui.MenuItem({
       label: 'CowDown Syntax Help',
       click: function () {
         FileLoader.load('./app/assets/help.md');
@@ -23,11 +30,15 @@
         FILEOPTS.fileName = null;
         FILEOPTS.filePath = null;
       }
-    }), 1);
+    }), 2);
   };
 
-  MenuBar.prototype.appendMenu = function (level, menu) {
-    win.menu.items[level].submenu.append(menu);
+  MenuBar.prototype.appendMenu = function (level, menu, position) {
+    if (position) {
+      win.menu.items[level].submenu.insert(menu, position);
+    } else {
+      win.menu.items[level].submenu.append(menu);
+    }
   };
 
   MenuBar.prototype.createFileMenu = function () {
