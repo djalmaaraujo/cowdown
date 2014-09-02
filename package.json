@@ -11,8 +11,8 @@
   "window": {
     "title": "Cowdown",
     "icon": "./app/assets/images/cowdown.png",
-    "toolbar": true,
-    "frame": true,
+    "toolbar": false,
+    "frame": false,
     "width": 800,
     "height": 500,
     "position": "mouse",
