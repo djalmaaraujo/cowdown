@@ -6,7 +6,7 @@
 A simple app using node-webkit.
 
 ## Download
-* Mac OS: [Download Here](http://db.orangedox.com/neD5HdbCvpzjMoZva3/Cowdown.dmg) (~35mb)
+* Mac OS: [Download Here](https://github.com/djalmaaraujo/cowdown/releases/download/v0.1.0/CowDown.dmg) (~35mb)
 * Linux: (soon)
 * Windows: (soon)
 
